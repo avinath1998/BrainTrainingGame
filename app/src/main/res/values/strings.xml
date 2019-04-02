@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Brainy!</string>
+    <string name="login_title">Brainy!</string>
+    <string name="login_btn_continue">Continue</string>
+    <string name="new_game_btn_continue">New Game</string>
+    <string name="exit_btn_continue">Exit</string>
+    <string name="game_choose_a_level">Choose a Level!</string>
+    <string name="levels_novice">Novice</string>
+    <string name="levels_easy">Easy</string>
+    <string name="levels_medium">Medium</string>
+    <string name="levels_guru">Guru</string>
+    <string name="brain_game_guess">Guess:</string>
+    <string name="brain_game_question_mark">\?</string>
+    <string name="brain_game_keyboard_1">1</string>
+    <string name="brain_game_keyboard_4">4</string>
+    <string name="brain_game_keyboard_3">3</string>
+    <string name="brain_game_keyboard_5">5</string>
+    <string name="brain_game_keyboard_6">6</string>
+    <string name="brain_game_keyboard_2">2</string>
+    <string name="brain_game_keyboard_7">7</string>
+    <string name="brain_game_keyboard_8">8</string>
+    <string name="brain_game_keyboard_9">9</string>
+    <string name="brain_game_keyboard_DEL">DEL</string>
+    <string name="brain_game_keyboard_0">0</string>
+    <string name="brain_game_keyboard_hash">#</string>
+    <string name="brain_game_keyboard_line">-</string>
+    <string name="brain_game_equals_sign">=</string>
+    <string name="switch_hints">Hints:</string>
+    <string name="game_answer_correct">CORRECT!</string>
+    <string name="game_answer_incorrect">INCORRECT!</string>
+    <string name="score_total_points">Total Points:</string>
+    <string name="score_play_again">Play Again</string>
+    <string name="score_main_menu">Main Menu</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_message">Save?</string>
+    <string name="dialog_yes_new">Save your game?</string>
+    <string name="dialog_message_new">Would you like to save your progress?</string>
+    <string name="about_text">Welcome to Brainy! the game where your wits are tested. To start a new game select New Game, to continue, select Continue from the menu
+        To play, you are given 10 seconds to asnwer an arithmetic question. The difficulty of the arithmetic question will be chosen by you once you start a game.
+        You can turn on Hints which allows you to answer upto 4 times and it will also tell you if your answer is too low or too high. You will have 10 arithmetic questions
+        to asnwer per game. To Delete a character from your answer, click the DEL key on the keyboard. </string>
+</resources>

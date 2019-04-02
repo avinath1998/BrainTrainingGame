@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.productions.crackdown.braintraininggame.ScoreGame.GameFinishFragment"
+    style="@style/WhiteBackground"
+    android:background="@color/accent"
+    android:padding="20dp">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/score_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congrats!"
+            style="@style/TitleText"
+            android:textColor="@color/secondary_text"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_total_points"
+            style="@style/TitleText"
+            android:textColor="@color/secondary_text"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/score_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="40"
+            style="@style/TitleText"
+            android:textColor="@color/secondary_text"
+            android:textSize="50sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+           <Button
+               android:id="@+id/score_btn_playagain"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/BlueButton"
+               android:text="@string/score_play_again"
+               android:layout_marginRight="@dimen/game_finish_btn_margin"/>
+
+            <Button
+                android:id="@+id/score_btn_mainmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BlueButton"
+                android:text="@string/score_main_menu"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

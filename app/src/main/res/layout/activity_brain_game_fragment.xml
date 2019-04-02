@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.productions.crackdown.braintraininggame.BrainGame.BrainGameFragment"
+    style="@style/WhiteBackground"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/brain_game_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/brain_game_guess"
+        style="@style/TitleText" />
+
+    <LinearLayout
+        android:id="@+id/brain_game_question_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/brain_game_title"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/brain_game_question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:fontFamily="@font/open_sans"
+            android:textAlignment="center"
+            android:enabled="false"
+            android:textColor="@color/primary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brain_game_equals_sign"
+            android:textSize="@dimen/brain_game_equals"/>
+
+        <EditText
+            android:id="@+id/brain_game_answer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/open_sans"
+            android:hint="@string/brain_game_question_mark"
+            android:textAlignment="center" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/brain_game_layout_hints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/brain_game_hints_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/switch_hints"
+            android:textSize="@dimen/switch_text" />
+
+        <Switch
+            android:id="@+id/brain_game_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brain_game_question_answer"
+        android:layout_above="@id/brain_game_keyboard"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/brain_game_user_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/brain_game_user_correct"
+                style="@style/InGameAlert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/brain_game_hint"
+                style="@style/InGameAlert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/brain_game_time_hints_holder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/brain_game_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/game_time_text"
+                android:textAlignment="center"
+                android:text="Time Remaining: 10s"/>
+
+            <TextView
+                android:id="@+id/brain_game_chances"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:textSize="@dimen/game_time_text"
+                android:textAlignment="center"
+                android:text="Chances: 4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/brain_game_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/keyboard_padding"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/brain_game_keyboard_1"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="@string/brain_game_keyboard_1"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_2"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/brain_game_keyboard_2"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_3"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:text="@string/brain_game_keyboard_3"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_4"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/brain_game_keyboard_4"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_5"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_gravity="center_horizontal|center"
+                android:text="@string/brain_game_keyboard_5"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_6"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:text="@string/brain_game_keyboard_6"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_7"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:text="@string/brain_game_keyboard_7"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_8"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/brain_game_keyboard_8"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_9"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:text="@string/brain_game_keyboard_9"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_delete"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:text="@string/brain_game_keyboard_DEL"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_0"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/brain_game_keyboard_0"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_hash"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="2"
+                android:layout_row="3"
+                android:text="@string/brain_game_keyboard_hash"
+                style="@style/BlueButtonKeyboard"/>
+
+            <Button
+                android:id="@+id/brain_game_keyboard_line"
+                style="@style/BlueButtonKeyboard"
+                android:layout_width="@dimen/brain_game_dimen_width"
+                android:layout_column="3"
+                android:layout_row="3"
+                android:layout_height="@dimen/brain_game_keyboard_height"
+                android:layout_gravity="bottom"
+                android:text="@string/brain_game_keyboard_line" />
+
+
+        </GridLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.productions.crackdown.braintraininggame.Login.LoginActivity"
+    style="@style/WhiteBackground"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/login_layout_btns"
+        android:background="@color/accent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/secondary_text"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lightbulb_outline_black_48dp"/>
+        <TextView
+            android:id="@+id/login_txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/login_title"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/login_title_txt_size"
+            style="@style/TitleText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_layout_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_btn_exit"
+        android:layout_marginBottom="@dimen/login_btn_bottom_margin"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/login_btn_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="300dp"
+            android:minWidth="200dp"
+            android:layout_margin="@dimen/login_btn_margin"
+            android:layout_gravity="center"
+            android:text="@string/login_btn_continue"
+            style="@style/BlueButton"/>
+
+        <Button
+            android:id="@+id/login_btn_new_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="300dp"
+            android:minWidth="200dp"
+            android:layout_margin="@dimen/login_btn_margin"
+            android:layout_gravity="center"
+            android:text="@string/new_game_btn_continue"
+            style="@style/BlueButton"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/login_btn_margin"
+        android:layout_gravity="center"
+        android:text="@string/exit_btn_continue"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/BlueButton"/>
+
+    <ImageView
+        android:id="@+id/login_btn_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:src="@drawable/ic_help_outline_white_36dp"/>
+
+
+</RelativeLayout>

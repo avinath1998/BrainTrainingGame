@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="background_all_padding">90dp</dimen>
+    <dimen name="login_btn_margin">10dp</dimen>
+    <dimen name="maintitle_text_size">40sp</dimen>
+</resources>
